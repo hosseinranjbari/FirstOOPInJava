@@ -9,9 +9,9 @@ public class CarTest {
         pride.closeDoor();
         pride.turnOn();
 
-        boolean isMazdaMoving = pride.isCarMoving();
+        boolean isPrideMoving = pride.isCarMoving();
 
-        assertTrue(isMazdaMoving);
+        assertTrue(isPrideMoving);
     }
 
     @Test
