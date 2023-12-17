@@ -1,12 +1,13 @@
-import vehicle.Car;
+import vehicle.BaseCar;
+import vehicle.SedanCar;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class CarTest {
+public class SedanCarTest {
     @Test
     void should_pride_moves_when_doors_are_close_and_car_is_on() {
-        Car pride = new Car("pride");
+        BaseCar pride = new SedanCar("pride");
         pride.closeVehicleDoor();
         pride.turnOn();
 
@@ -17,7 +18,7 @@ public class CarTest {
 
     @Test
     void should_pride_parks_when_doors_are_close_and_car_is_switch_off() {
-        Car pride = new Car("pride");
+        BaseCar pride = new SedanCar("pride");
         pride.closeVehicleDoor();
         pride.switchOff();
 
@@ -29,7 +30,7 @@ public class CarTest {
 
     @Test
     void should_pride_parks_when_doors_are_open_and_car_is_on() {
-        Car pride = new Car("pride");
+        BaseCar pride = new SedanCar("pride");
         pride.openVehicleDoor();
         pride.turnOn();
 
@@ -40,7 +41,7 @@ public class CarTest {
 
     @Test
     void should_pride_parks_when_doors_are_open_and_car_is_switch_off() {
-        Car pride = new Car("pride");
+        BaseCar pride = new SedanCar("pride");
         pride.openVehicleDoor();
         pride.switchOff();
 

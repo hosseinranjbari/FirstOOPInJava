@@ -1,11 +1,11 @@
 package vehicle;
 
-public class Car extends Vehicle implements VehicleOptions{
+public class BaseCar extends BaseVehicle{
     boolean isDoorOpen = false;
 
     String carName;
 
-    public Car(String carName) {
+    public BaseCar(String carName) {
         this.carName = carName;
     }
 
@@ -13,12 +13,10 @@ public class Car extends Vehicle implements VehicleOptions{
         return !isDoorOpen && isVehicleOn;
     }
 
-    @Override
     public void openVehicleDoor() {
         isDoorOpen = true;
     }
 
-    @Override
     public void closeVehicleDoor() {
         isDoorOpen = false;
     }
