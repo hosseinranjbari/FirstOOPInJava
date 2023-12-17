@@ -1,6 +1,6 @@
 package vehicle;
 
-public class BaseMotor extends BaseVehicle {
+public abstract class BaseMotor extends BaseVehicle {
     String nameOfMotor;
     double speedOfMotor;
     public BaseMotor(String nameOfMotor, double speedOfMotor) {
@@ -11,4 +11,6 @@ public class BaseMotor extends BaseVehicle {
     public boolean isVehicleMoving() {
         return isVehicleOn;
     }
+
+    public abstract String soundOfMotor();
 }

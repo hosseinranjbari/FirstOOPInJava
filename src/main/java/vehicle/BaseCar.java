@@ -1,6 +1,6 @@
 package vehicle;
 
-public class BaseCar extends BaseVehicle{
+public abstract class BaseCar extends BaseVehicle{
     boolean isDoorOpen = false;
 
     String carName;
@@ -20,4 +20,6 @@ public class BaseCar extends BaseVehicle{
     public void closeVehicleDoor() {
         isDoorOpen = false;
     }
+
+    public abstract String getInfo();
 }

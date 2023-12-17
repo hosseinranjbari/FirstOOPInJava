@@ -14,6 +14,9 @@ public class SedanCarTest {
         boolean isPrideMoving = pride.isVehicleMoving();
 
         assertTrue(isPrideMoving);
+
+        pride.getInfo();
+        System.out.println("************************");
     }
 
     @Test
@@ -26,6 +29,9 @@ public class SedanCarTest {
 
         assertFalse(isPrideMoving);
 
+        pride.getInfo();
+        System.out.println("************************");
+
     }
 
     @Test
@@ -37,6 +43,9 @@ public class SedanCarTest {
         boolean isPrideMoving = pride.isVehicleMoving();
 
         assertFalse(isPrideMoving);
+
+        pride.getInfo();
+        System.out.println("************************");
     }
 
     @Test
@@ -48,6 +57,9 @@ public class SedanCarTest {
         boolean isPrideMoving = pride.isVehicleMoving();
 
         assertFalse(isPrideMoving);
+
+        pride.getInfo();
+        System.out.println("************************");
     }
 
 }

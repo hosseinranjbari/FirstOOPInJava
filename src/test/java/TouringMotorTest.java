@@ -9,10 +9,13 @@ public class TouringMotorTest {
     void motor_should_move_when_it_is_on() {
         BaseMotor motor = new TouringMotor("BMW K 1200 LT ", 220);
         motor.turnOn();
+        System.out.println(motor.soundOfMotor());
 
         boolean vehicleMoving = motor.isVehicleMoving();
 
         Assertions.assertTrue(vehicleMoving);
+
+        System.out.println("************************");
     }
 
     @Test
@@ -23,5 +26,7 @@ public class TouringMotorTest {
         boolean vehicleMoving = motor.isVehicleMoving();
 
         Assertions.assertFalse(vehicleMoving);
+
+        System.out.println("************************");
     }
 }
