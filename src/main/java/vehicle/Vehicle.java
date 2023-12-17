@@ -1,6 +1,6 @@
 package vehicle;
 
-public class Vehicle {
+public abstract class Vehicle {
     boolean isVehicleOn = false;
 
     public void turnOn() {
@@ -10,4 +10,6 @@ public class Vehicle {
     public void switchOff() {
         isVehicleOn = false;
     }
+
+    public abstract boolean isVehicleMoving();
 }
