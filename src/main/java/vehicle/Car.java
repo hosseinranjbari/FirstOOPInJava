@@ -1,8 +1,7 @@
-package car;
+package vehicle;
 
-public class Car {
+public class Car extends Vehicle{
     boolean isDoorOpen = false;
-    boolean isCarOn = false;
 
     String carName;
 
@@ -20,18 +19,8 @@ public class Car {
         System.out.println("Door is close.");
     }
 
-    public void turnOn() {
-        isCarOn = true;
-        System.out.println("car.Car is started!");
-    }
-
-    public void switchOff() {
-        isCarOn = false;
-        System.out.println("car.Car is switched off");
-    }
-
-    public boolean isCarMoving() {
-        if (!isDoorOpen && isCarOn) {
+    public boolean isVehicleMoving() {
+        if (!isDoorOpen && isVehicleOn) {
             System.out.println("car.Car is moving...");
             return true;
         } else {

@@ -1,4 +1,4 @@
-import car.Car;
+import vehicle.Car;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -10,7 +10,7 @@ public class CarTest {
         pride.closeDoor();
         pride.turnOn();
 
-        boolean isPrideMoving = pride.isCarMoving();
+        boolean isPrideMoving = pride.isVehicleMoving();
 
         assertTrue(isPrideMoving);
     }
@@ -21,7 +21,7 @@ public class CarTest {
         pride.closeDoor();
         pride.switchOff();
 
-        boolean isPrideMoving = pride.isCarMoving();
+        boolean isPrideMoving = pride.isVehicleMoving();
 
         assertFalse(isPrideMoving);
 
@@ -33,7 +33,7 @@ public class CarTest {
         pride.openDoor();
         pride.turnOn();
 
-        boolean isPrideMoving = pride.isCarMoving();
+        boolean isPrideMoving = pride.isVehicleMoving();
 
         assertFalse(isPrideMoving);
     }
@@ -44,7 +44,7 @@ public class CarTest {
         pride.openDoor();
         pride.switchOff();
 
-        boolean isPrideMoving = pride.isCarMoving();
+        boolean isPrideMoving = pride.isVehicleMoving();
 
         assertFalse(isPrideMoving);
     }
