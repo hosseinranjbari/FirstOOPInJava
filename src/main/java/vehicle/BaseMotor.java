@@ -13,4 +13,8 @@ public abstract class BaseMotor extends BaseVehicle {
     }
 
     public abstract String soundOfMotor();
+
+    public String getName() {
+        return nameOfMotor;
+    }
 }

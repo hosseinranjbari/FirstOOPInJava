@@ -12,4 +12,6 @@ public abstract class BaseVehicle {
     }
 
     public abstract boolean isVehicleMoving();
+
+    public abstract String getName();
 }

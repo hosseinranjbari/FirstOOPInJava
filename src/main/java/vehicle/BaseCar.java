@@ -22,4 +22,8 @@ public abstract class BaseCar extends BaseVehicle{
     }
 
     public abstract String getInfo();
+
+    public String getName() {
+        return carName;
+    }
 }
