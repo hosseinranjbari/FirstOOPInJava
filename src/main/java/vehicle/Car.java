@@ -16,12 +16,10 @@ public class Car extends Vehicle implements VehicleOptions{
     @Override
     public void openVehicleDoor() {
         isDoorOpen = true;
-        System.out.println("Door is open.");
     }
 
     @Override
     public void closeVehicleDoor() {
         isDoorOpen = false;
-        System.out.println("Door is close.");
     }
 }
