@@ -1,6 +1,6 @@
 package vehicle;
 
-public class Car extends Vehicle{
+public class Car extends Vehicle implements VehicleOptions{
     boolean isDoorOpen = false;
 
     String carName;
@@ -9,24 +9,19 @@ public class Car extends Vehicle{
         this.carName = carName;
     }
 
-    public void openDoor() {
+    public boolean isVehicleMoving() {
+        return !isDoorOpen && isVehicleOn;
+    }
+
+    @Override
+    public void openVehicleDoor() {
         isDoorOpen = true;
         System.out.println("Door is open.");
     }
 
-    public void closeDoor() {
+    @Override
+    public void closeVehicleDoor() {
         isDoorOpen = false;
         System.out.println("Door is close.");
-    }
-
-    public boolean isVehicleMoving() {
-        if (!isDoorOpen && isVehicleOn) {
-            System.out.println("car.Car is moving...");
-            return true;
-        } else {
-            System.out.println("car.Car is park.\n" +
-                    "You should close Doors and Turn on and then you can move");
-            return false;
-        }
     }
 }
