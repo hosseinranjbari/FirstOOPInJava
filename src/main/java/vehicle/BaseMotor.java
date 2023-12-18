@@ -1,20 +1,20 @@
 package vehicle;
 
 public abstract class BaseMotor extends BaseVehicle {
-    String nameOfMotor;
-    double speedOfMotor;
-    public BaseMotor(String nameOfMotor, double speedOfMotor) {
+    protected String nameOfMotor;
+    protected double speedOfMotor;
+    protected BaseMotor(String nameOfMotor, double speedOfMotor) {
         this.nameOfMotor = nameOfMotor;
         this.speedOfMotor = speedOfMotor;
     }
     @Override
-    public boolean isVehicleMoving() {
+    protected boolean isVehicleMoving() {
         return isVehicleOn;
     }
 
-    public abstract String soundOfMotor();
+    protected abstract String soundOfMotor();
 
-    public String getName() {
+    protected String getName() {
         return nameOfMotor;
     }
 }

@@ -1,29 +1,29 @@
 package vehicle;
 
 public abstract class BaseCar extends BaseVehicle{
-    boolean isDoorOpen = false;
+    protected boolean isDoorOpen = false;
 
-    String carName;
+    protected String carName;
 
-    public BaseCar(String carName) {
+    protected BaseCar(String carName) {
         this.carName = carName;
     }
 
-    public boolean isVehicleMoving() {
+    protected boolean isVehicleMoving() {
         return !isDoorOpen && isVehicleOn;
     }
 
-    public void openVehicleDoor() {
+    protected void openVehicleDoor() {
         isDoorOpen = true;
     }
 
-    public void closeVehicleDoor() {
+    protected void closeVehicleDoor() {
         isDoorOpen = false;
     }
 
-    public abstract String getInfo();
+    protected abstract String getInfo();
 
-    public String getName() {
+    protected String getName() {
         return carName;
     }
 }

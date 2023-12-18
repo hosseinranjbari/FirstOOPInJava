@@ -1,3 +1,5 @@
+package vehicle;
+
 import vehicle.BaseCar;
 import vehicle.SedanCar;
 import org.junit.jupiter.api.Test;
