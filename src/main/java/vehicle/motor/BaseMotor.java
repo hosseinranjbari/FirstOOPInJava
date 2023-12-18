@@ -1,4 +1,6 @@
-package vehicle;
+package vehicle.motor;
+
+import vehicle.BaseVehicle;
 
 public abstract class BaseMotor extends BaseVehicle {
     protected String nameOfMotor;
@@ -8,13 +10,22 @@ public abstract class BaseMotor extends BaseVehicle {
         this.speedOfMotor = speedOfMotor;
     }
     @Override
-    protected boolean isVehicleMoving() {
+    public boolean isVehicleMoving() {
         return isVehicleOn;
     }
 
-    protected abstract String soundOfMotor();
+    public abstract String soundOfMotor();
 
-    protected String getName() {
+    public String getName() {
         return nameOfMotor;
     }
+
+    protected void turnOn() {
+        isVehicleOn = true;
+    }
+
+    protected void switchOff() {
+        isVehicleOn = false;
+    }
+
 }

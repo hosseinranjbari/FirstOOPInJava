@@ -2,10 +2,8 @@ package vehicle;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import vehicle.BaseVehicle;
-import vehicle.PrintNameOfVehicles;
-import vehicle.SedanCar;
-import vehicle.TouringMotor;
+import vehicle.car.SedanCar;
+import vehicle.motor.TouringMotor;
 
 public class PrintNameOfVehiclesTest {
 

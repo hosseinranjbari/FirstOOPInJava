@@ -1,10 +1,7 @@
-package vehicle;
+package vehicle.motor;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import vehicle.BaseMotor;
-import vehicle.TouringMotor;
-import vehicle.BaseVehicle;
 
 public class TouringMotorTest {
     @Test
@@ -22,7 +19,7 @@ public class TouringMotorTest {
 
     @Test
     void motor_should_be_in_park_when_it_is_switched_off() {
-        BaseVehicle motor = new TouringMotor("Harley-Davidson", 235);
+        BaseMotor motor = new TouringMotor("Harley-Davidson", 235);
         motor.switchOff();
 
         boolean vehicleMoving = motor.isVehicleMoving();

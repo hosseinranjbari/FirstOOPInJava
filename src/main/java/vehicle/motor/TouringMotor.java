@@ -1,4 +1,4 @@
-package vehicle;
+package vehicle.motor;
 
 public class TouringMotor extends BaseMotor {
 

@@ -3,15 +3,11 @@ package vehicle;
 public abstract class BaseVehicle {
     protected boolean isVehicleOn = false;
 
-    protected void turnOn() {
-        isVehicleOn = true;
-    }
+    protected abstract void turnOn();
 
-    protected void switchOff() {
-        isVehicleOn = false;
-    }
+    protected abstract void switchOff();
 
-    protected abstract boolean isVehicleMoving();
+    public abstract boolean isVehicleMoving();
 
-    protected abstract String getName();
+    public abstract String getName();
 }

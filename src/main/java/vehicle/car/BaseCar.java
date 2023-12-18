@@ -1,6 +1,8 @@
-package vehicle;
+package vehicle.car;
 
-public abstract class BaseCar extends BaseVehicle{
+import vehicle.BaseVehicle;
+
+public abstract class BaseCar extends BaseVehicle {
     protected boolean isDoorOpen = false;
 
     protected String carName;
@@ -9,7 +11,9 @@ public abstract class BaseCar extends BaseVehicle{
         this.carName = carName;
     }
 
-    protected boolean isVehicleMoving() {
+    @Override
+
+    public boolean isVehicleMoving() {
         return !isDoorOpen && isVehicleOn;
     }
 
@@ -21,9 +25,19 @@ public abstract class BaseCar extends BaseVehicle{
         isDoorOpen = false;
     }
 
-    protected abstract String getInfo();
+    public abstract String getInfo();
 
-    protected String getName() {
+    public String getName() {
         return carName;
+    }
+
+
+    protected void turnOn() {
+        isVehicleOn = true;
+    }
+
+
+    protected void switchOff() {
+        isVehicleOn = false;
     }
 }

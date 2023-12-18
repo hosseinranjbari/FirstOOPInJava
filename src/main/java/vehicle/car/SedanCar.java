@@ -1,4 +1,4 @@
-package vehicle;
+package vehicle.car;
 
 public class SedanCar extends BaseCar {
     public SedanCar(String nameOfSedan) {

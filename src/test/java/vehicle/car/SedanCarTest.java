@@ -1,7 +1,7 @@
-package vehicle;
+package vehicle.car;
 
-import vehicle.BaseCar;
-import vehicle.SedanCar;
+import vehicle.car.BaseCar;
+import vehicle.car.SedanCar;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
