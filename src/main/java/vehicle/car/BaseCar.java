@@ -4,11 +4,13 @@ import vehicle.BaseVehicle;
 
 public abstract class BaseCar extends BaseVehicle {
     protected boolean isDoorOpen = false;
+    protected TypeOfGearBox gearBoxType;
 
     protected String carName;
 
-    protected BaseCar(String carName) {
+    protected BaseCar(String carName, TypeOfGearBox gearBoxType) {
         this.carName = carName;
+        this.gearBoxType = gearBoxType;
     }
 
     @Override

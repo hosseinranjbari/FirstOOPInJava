@@ -1,4 +1,5 @@
 import vehicle.car.SedanCar;
+import vehicle.car.TypeOfGearBox;
 import vehicle.motor.TouringMotor;
 
 import java.util.Scanner;
@@ -6,11 +7,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         String nameOfSedanCar = args[0];
-        SedanCar camry = new SedanCar(nameOfSedanCar);
+        TypeOfGearBox gearBoxType = TypeOfGearBox.valueOf(args[1]);
+        SedanCar camry = new SedanCar(nameOfSedanCar, gearBoxType);
         System.out.println(camry.getInfo());
 
-        String nameOfTouringMotor = args[1];
-        int speedOfTouringMotor = Integer.parseInt(args[2]);
+        String nameOfTouringMotor = args[2];
+        int speedOfTouringMotor = Integer.parseInt(args[3]);
         TouringMotor kawasaki = new TouringMotor(nameOfTouringMotor, speedOfTouringMotor);
         System.out.println(kawasaki.getName());
 

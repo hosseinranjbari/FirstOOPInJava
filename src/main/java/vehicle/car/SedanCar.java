@@ -1,8 +1,8 @@
 package vehicle.car;
 
 public class SedanCar extends BaseCar {
-    public SedanCar(String nameOfSedan) {
-        super(nameOfSedan);
+    public SedanCar(String nameOfSedan, TypeOfGearBox gearBoxType) {
+        super(nameOfSedan, gearBoxType);
         System.out.println("This is a Sedan car.");
         System.out.println("Name: " + nameOfSedan);
 
